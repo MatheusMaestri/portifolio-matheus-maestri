@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Maestri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <div class="interface" id="cabecalho">
+            <div class="logo">
+                <a href="#">Matheus <span>Maestri</span></a>
+            </div>
+            <!-- LOGO -->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portifolio">Portifólio</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#contato">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portifolio">Portifólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
+
+        </div>
+    </header> 
+    <!-- FECHAMENTO DE CABEÇALHO -->
+
+    <main>
+        <section class="topo-do-site hidden" id="inicio">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Programador <span>Front-End</span></h1>
+                        <p>Transformando Ideias em Realidade Digital. Com a combinação única
+                            de desing impactante, funcionalidades intuitivas e otimização para
+                            resultador, estou pronto para criar a presença online dos seus sonhos.
+                        </p>
+                        <div class="btn-contato">
+                            <a href="https://wa.me/5527998948168" target="_blank">
+                                <button>Entre em Contato</button>
+                            </a>
+                        </div>
+                    </div> 
+                    <!-- FIM DO TEXTO DO TOPO -->
+                    <div class="img-topo-site">
+                        <img src="imagens/WhatsApp_Image_2024-07-28_at_23.37.17-removebg.png" width="500px" height="700px" alt="">
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section class="especialidades hidden" id="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box hidden">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <h3>Website</h3>
+                        <p>Colocando sua empresa, serviços e ideias no site para melhor 
+                            apresentação e visibilidade.</p>
+                    </div>
+
+                    <div class="especialidades-box hidden">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <h3>Loja Virtual</h3>
+                        <p>Colocando sua loja física em uma loja online para maior alcance
+                            de clientes.
+                        </p>
+                    </div>
+
+                    <div class="especialidades-box hidden">
+                        <ion-icon name="logo-wordpress"></ion-icon>
+                        <h3>Blog</h3>
+                        <p>Colocando sua empresa, serviços e ideias no site para melhor 
+                            apresentação e visibilidade</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre hidden" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="imagens/WhatsApp Image 2024-07-28 at 23.37.17.jpeg" width="500px" height="500px" alt="">
+                    </div>
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <br> <span>SOU MATHEUS MAESTRI</span></h2>
+                        <p>Meu nome é Matheus Maestri e sou programador front-end há quase um ano. Tenho me dedicado a desenvolver minhas habilidades em tecnologias de front-end, criando interfaces de usuário atraentes e funcionais.</p>
+                        <p>Atualmente, estou estudando Análise e Desenvolvimento de Sistemas, o que tem me permitido aprofundar meus conhecimentos em diversas áreas da programação e entender melhor o desenvolvimento de software como um todo. Estou sempre buscando aprender e crescer na minha carreira, com o objetivo de me tornar um desenvolvedor cada vez mais completo e capacitado.</p>
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/matheus-maestri-da-silva/" target="_blank">
+                                <button><ion-icon name="logo-linkedin"></ion-icon></button>
+                            </a>
+                            <a href="https://www.instagram.com/matheusmaestrii?igsh=ZHB3ejJjemttZmJ5&utm_source=qr" target="_blank">
+                                <button><ion-icon name="logo-instagram"></ion-icon></button>
+                            </a>
+                            <a href="https://github.com/MatheusMaestri" target="_blank">
+                                <button><ion-icon name="logo-github"></ion-icon></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portifolio hidden" id="portifolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTIFÓLIO</span></h2>
+                <div class="flex hidden">
+                    <div class="img-port" style="background-image: url(imagens/trabalho.png);">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/trabalho.png);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(imagens/trabalho.png);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario hidden" id="contato">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu Nome:" required>
+                    <input type="text" name="" id="" placeholder="Seu E-mail:" required>
+                    <input type="number" name="" id="" placeholder="Seu Numero:" required>
+                    <textarea name="" id="" placeholder="Sua Mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <a href="#">Matheus <span>Maestri</span></a>
+                    </div>
+                    <div class="btn-social">
+                        <a href="#">
+                            <button><ion-icon name="logo-linkedin"></ion-icon></button>
+                        </a>
+                        <a href="#">
+                            <button><ion-icon name="logo-instagram"></ion-icon></button>
+                        </a>
+                        <a href="#">
+                            <button><ion-icon name="logo-github"></ion-icon></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p><ion-icon name="mail-outline"></ion-icon>
+                    <a href="mailto:matheusmaestri28@gmail.com">matheusmaestri28@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
