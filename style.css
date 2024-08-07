@@ -25,14 +25,14 @@ html{
 .hidden{
     opacity: 0;
     transform: translateX(-100%);
-    transition: all 1.3s;
+    transition: all 1.8s;
     
 }
 
 .show{
     opacity: 1;
     transform: translateX(0);
-    transition: all 1.3s;
+    transition: all 1.8s;
 }
 
 body{
@@ -41,7 +41,7 @@ body{
 }
 
 section{
-    min-height: 60vh;
+    min-height: 90vh;
     display: flex;
     place-items: center;
     align-items: center;
@@ -52,7 +52,7 @@ section{
 }
 
 .logo span{
-    color: rgb(0, 255, 8);
+    color: rgb(0, 0, 255);
 }
 
 h2.titulo{
@@ -62,7 +62,7 @@ h2.titulo{
 }
 
 h2.titulo span{
-    color: #00FF08;
+    color: rgb(0, 0, 255);
 }
 
 .interface{
@@ -85,7 +85,7 @@ header > .interface {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 header nav ul li a{
@@ -111,7 +111,7 @@ header nav ul li{
 
 /* ESTILO MENU MOBILE */
 .btn-abrir-menu ion-icon{
-    color: #00FF08;
+    color: #0000ff;
     font-size: 50px;
 }
 
@@ -143,12 +143,12 @@ header nav ul li{
 }
 
 .menu-mobile .btn-fechar ion-icon{
-    color: #00FF08;
+    color: #0000ff;
     font-size: 50px;
 }
 
 .menu-mobile nav ul{
-    text-align: right;
+    text-align: center;
     
 }
 
@@ -161,11 +161,11 @@ header nav ul li{
 }
 
 .menu-mobile nav ul li a:hover{
-    background-color: #00FF08;
     border-radius: 20px;
-    color: #000;
+    color: #fff;
 }
 
+/* estilo do topo do site */
 .overlay-menu {
     background-color: #000000be;
     width: 100%;
@@ -177,23 +177,26 @@ header nav ul li{
     display: none;
 }
 
+
+
 .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00FF08;
+    background-color: #0000ff;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: .5s;
+    color: #e4e4e4;
 }
 
 button:hover, form .btn-enviar input[type=submit]:hover{
-    box-shadow:  0px 0px 8px #00ff08 ;
+    box-shadow:  0px 0px 8px #0000ff ;
     transform: scale(1.1);
 }
 
-/* estilo do topo do site */
+
 
 section.topo-do-site{
     padding: 40px 4%;
@@ -206,28 +209,34 @@ section.topo-do-site > .interface{
 section.topo-do-site .flex{
     align-items: center;
     justify-content: center;
-    gap: 90px;
 }
+
+
 
 
 .topo-do-site h1{
     color: #FFF;
-    font-size: 42px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.topo-do-site .txt-topo-site h1 span{
-    color: #00FF08;
+.txt-topo-site span {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .topo-do-site .txt-topo-site p{
     color: #fff;
     margin: 40px 0;
+    max-width: 70%;
 }
 
 .topo-do-site .img-topo-site img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     border-radius: 50px 20px 0 20px;
+    width:300px; 
+    height:400px
 }
 
 @keyframes flutuar {
@@ -235,14 +244,14 @@ section.topo-do-site .flex{
         top: 0;
     }
     100%{
-        top: 30px;
+        top: 20px;
     }
 }
 
 /* ESPECIALIDADES */
 
 section.especialidades{
-    padding: 40px 4%;
+    height: 100vh;
 }
 
 section.especialidades .flex{
@@ -264,7 +273,7 @@ section.especialidades .flex{
 
 .especialidades .especialidades-box ion-icon{
     font-size: 70px;
-    color: #00FF08;
+    color: #0000ff;
 }
 
 .especialidades .especialidades-box h3{
@@ -275,7 +284,7 @@ section.especialidades .flex{
 /* ESTILO SOBRE */
 
 section.sobre{
-    padding: 80px 4%;
+    height: 100vh;
 }
 
 section.sobre .flex{
@@ -294,7 +303,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre h2 span{
-    color: #00FF08;
+    color: #0000ff;
 }
 
 .sobre .txt-sobre p{
@@ -307,16 +316,21 @@ section.sobre .flex{
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #00FF08;
+    background-color: #0000ff;
     cursor: pointer;
     margin: 0 5px;
     transition: .5s;
+}
+
+.btn-social a{
+    text-decoration: none;
 }
 
 .btn-social button ion-icon{
     align-items: center;
     padding-top: 5px;
     font-size: 25px;
+    color: #e4e4e4;
 }
 
 .img-sobre img{
@@ -326,7 +340,7 @@ section.sobre .flex{
 /* MEU PORTIFOLIO */
 
 section.portifolio{
-    padding: 80px 4%;
+    height: 100vh;
     box-shadow: 0 0 40px 10px #ffffff33;
 }
 
@@ -413,8 +427,8 @@ form .btn-enviar{
 
 form .btn-enviar input[type=submit]{
     width: 120px;
-    background-color: #00FF08;
-    color: #000;
+    background-color: #0000ff;
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
     transition: .5s;
@@ -436,7 +450,7 @@ footer .flex{
 }
 
 .logo-footer span{
-    color: #00FF08;
+    color: #0000ff;
 }
 
 footer .line-footer{
@@ -444,11 +458,11 @@ footer .line-footer{
 }
 
 .borda{
-    border-top: 2px solid #00FF08;
+    border-top: 2px solid #0000ff;
 }
 
 footer .line-footer p ion-icon{
-    color: #00FF08;
+    color: #0000ff;
     font-size: 25px;
 }
 
@@ -470,6 +484,11 @@ footer .line-footer p ion-icon{
 
     /* TOPO DO SITE */
 
+    .topo-do-site .txt-topo-site p{
+
+        max-width: 100%;
+    }
+
     section.topo-do-site .flex{
         gap: 50px;
     }
@@ -479,6 +498,7 @@ footer .line-footer p ion-icon{
     }
 
     .topo-do-site h1{
+        margin-top: 15%;
         font-size: 35px;
     }
 
@@ -490,6 +510,7 @@ footer .line-footer p ion-icon{
     /* ESPECIALIDADES */
 
     section.especialidades{
+        margin: 250px 0;
         padding: 40px 8%;
     }
 
@@ -512,12 +533,15 @@ footer .line-footer p ion-icon{
     .img-sobre img{
         width: 100%;
         height: 100%;
+        
     }
 
     /* PORTIFOLIO */
 
     section.portifolio{
+        margin: 500px 0;
         padding: 80px 8%;
+        box-shadow: none;
     }
 
     .img-port{
@@ -541,14 +565,20 @@ footer .line-footer p ion-icon{
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen  and (max-width: 1366px) {
     .menu-desktop, .btn-contato{
         display: none;
     }
 
+    .menu-mobile nav ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 5em;
+    }
+
     .topo-do-site .img-topo-site img{
-        width: 450px;
-        height: 100%;
+        width: 400px;
+        height: 500px;
     }
 
     .img-sobre img{
