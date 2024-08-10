@@ -235,8 +235,8 @@ section.topo-do-site .flex{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     border-radius: 50px 20px 0 20px;
-    width:300px; 
-    height:400px
+    width: 300px; 
+    height: 400px;
 }
 
 @keyframes flutuar {
@@ -467,7 +467,7 @@ footer .line-footer p ion-icon{
 }
 
 
-@media screen and (max-width: 844px) {
+@media (max-width: 450px) {
     .flex{
         flex-direction: column;
     }
@@ -489,9 +489,7 @@ footer .line-footer p ion-icon{
     }
 
     .topo-do-site .txt-topo-site p{
-        width: 100%;
-        margin: 20px auto;
-        text-align: justify;
+        margin: 40px auto;
     }
 
     section.topo-do-site .flex{
@@ -499,25 +497,136 @@ footer .line-footer p ion-icon{
     }
 
     section.topo-do-site{
-        padding: 20px 2%;
+        padding: 20px 0;
     }
 
     .topo-do-site h1{
         margin-top: 15%;
-        font-size: 35px;
+        font-size: 3em;
     }
 
     /* ESPECIALIDADES */
 
     section.especialidades{
-        margin: 250px 0;
-        padding: 40px 8%;
+        margin: 100% 0;
+        padding: 80px 8%;
+    }
+
+    /* ESTILO SOBRE */
+
+    section.sobre{
+        padding: 0 0;
+        height: 100%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 1.8em;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre p{
+        width: 80%;
+        margin: 10% auto;
+    }
+    
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* PORTIFOLIO */
+
+    section.portifolio{
+        height: 100%;
+        margin: 70% 0;
+        box-shadow: none;
+    }
+
+    .img-port{
+        width: 100%;
+        width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portifolio .flex{
+        gap: 60px;
+    }
+
+
+    /* FOOTER */
+
+    footer .flex{
+        gap: 30px;
+    }
+    footer .line-footer{
+        text-align: center;
+    }
+}
+
+
+
+@media (min-width: 728px) and (max-width: 1365px){
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    .topo-do-site .txt-topo-site {
+        text-align: center;
+        width: 100%;
+    }
+
+    .topo-do-site .txt-topo-site p{
+        width: 450px;
+        margin: 40px auto;
+        width: 100%;
+    }
+
+    section.topo-do-site .flex{
+        gap: 50px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 0;
+    }
+
+    .topo-do-site h1{
+        margin-top: 15%;
+        font-size: 3em;
+    }
+
+    /* ESPECIALIDADES */
+
+    section.especialidades{
+        margin: 20% 0;
+        padding: 80px 8%;
     }
 
     /* ESTILO SOBRE */
 
     section.sobre{
         padding: 80px 2%;
+    }
+
+    .sobre .txt-sobre p{
+        width: 80%;
+        margin: 5% auto;
     }
 
     .sobre .txt-sobre h2{
@@ -533,20 +642,19 @@ footer .line-footer p ion-icon{
     .img-sobre img{
         width: 100%;
         height: 100%;
-        
     }
 
     /* PORTIFOLIO */
 
     section.portifolio{
-        margin: 500px 0;
-        padding: 80px 8%;
+        margin: 200px 0;
         box-shadow: none;
+        height: 100%;
     }
 
     .img-port{
         width: 100%;
-        max-width: 360px;
+        width: 360px;
         margin: 0 auto;
     }
 
